@@ -6,6 +6,7 @@
         <slot />
       </UPage>
     </UContainer>
+    <Footer />
   </div>
 </template>
 
