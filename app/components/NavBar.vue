@@ -7,8 +7,8 @@ const navItems = computed(() => [
     to: '/',
   },
   {
-    label: 'Menu Item',
-    to: '/page2',
+    label: 'Recherche avancée',
+    to: '/search',
   },
   {
     label: 'Menu Item',
