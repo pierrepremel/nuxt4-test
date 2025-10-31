@@ -1,6 +1,11 @@
 <template>
   <div>
-    <slot />
+    <NavBar />
+    <UContainer>
+      <UPage>
+        <slot />
+      </UPage>
+    </UContainer>
   </div>
 </template>
 
