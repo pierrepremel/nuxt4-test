@@ -6,7 +6,13 @@ export const useSales = () => {
   const getSales = () => {
     return useFetch<Sale[]>('/sales', { 
       $fetch: $api,
-      key: 'sales'
+      key: 'sales',
+      transform: (sales) => {
+      return sales.sort((a, b) => {
+        const order = { live: 0, upcoming: 1 }
+        return order[a.status] - order[b.status]
+      })
+    }
     })
   }
   

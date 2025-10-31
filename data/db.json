@@ -79,7 +79,51 @@
       "category": "Tableaux",
       "lowEstimate": 25000,
       "highEstimate": 35000,
-      "imageUrl": "https://images.unsplash.com/photo-1520859014103-79d88d5c9c0a"
+      "imageUrl": "https://images.unsplash.com/photo-1579541780867-51ebc4e37316?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1102"
+    },
+    {
+      "id": "3",
+      "saleId": "2",
+      "saleOrder": 1,
+      "title": "Huile sur toile - École Flamande XVIIe",
+      "description": "Nature morte aux fruits et gibier, école flamande du XVIIe siècle. Huile sur toile. Attribué à Frans Snyders (1579-1657). Restaurations anciennes. Dimensions : 92 x 126 cm (cadre compris : 110 x 144 cm).",
+      "category": "Tableaux",
+      "lowEstimate": 8000,
+      "highEstimate": 12000,
+      "imageUrl": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5"
+    },
+    {
+      "id": "4",
+      "saleId": "2",
+      "saleOrder": 2,
+      "title": "Vue de Venise par Félix Ziem",
+      "description": "Félix Ziem (1821-1911), 'Le Grand Canal et la Salute', huile sur panneau, signée en bas à droite. Certificat d'authenticité Mathias Ary Jan. 38 x 55 cm.",
+      "category": "Tableaux",
+      "lowEstimate": 25000,
+      "highEstimate": 35000,
+      "imageUrl": "https://images.unsplash.com/photo-1579541780867-51ebc4e37316?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1102"
+    },
+    {
+      "id": "3",
+      "saleId": "2",
+      "saleOrder": 1,
+      "title": "Huile sur toile - École Flamande XVIIe",
+      "description": "Nature morte aux fruits et gibier, école flamande du XVIIe siècle. Huile sur toile. Attribué à Frans Snyders (1579-1657). Restaurations anciennes. Dimensions : 92 x 126 cm (cadre compris : 110 x 144 cm).",
+      "category": "Tableaux",
+      "lowEstimate": 8000,
+      "highEstimate": 12000,
+      "imageUrl": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5"
+    },
+    {
+      "id": "4",
+      "saleId": "2",
+      "saleOrder": 2,
+      "title": "Vue de Venise par Félix Ziem",
+      "description": "Félix Ziem (1821-1911), 'Le Grand Canal et la Salute', huile sur panneau, signée en bas à droite. Certificat d'authenticité Mathias Ary Jan. 38 x 55 cm.",
+      "category": "Tableaux",
+      "lowEstimate": 25000,
+      "highEstimate": 35000,
+      "imageUrl": "https://images.unsplash.com/photo-1579541780867-51ebc4e37316?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1102"
     },
     {
       "id": "5",
@@ -112,7 +156,7 @@
       "category": "Sculpture",
       "lowEstimate": 15000,
       "highEstimate": 20000,
-      "imageUrl": "https://images.unsplash.com/photo-1578926078261-9087d98a5c6e"
+      "imageUrl": "https://images.unsplash.com/photo-1723914978754-a8d7a78f7b54?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=735"
     },
     {
       "id": "8",

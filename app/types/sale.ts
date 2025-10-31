@@ -1,8 +1,6 @@
 export enum SaleStatus {
   UPCOMING = 'upcoming',
-  ACTIVE = 'active',
-  COMPLETED = 'completed',
-  CANCELLED = 'cancelled'
+  LIVE = 'live',
 }
 
 export interface Sale {
