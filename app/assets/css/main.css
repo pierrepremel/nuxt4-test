@@ -1,2 +1,11 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+@theme static {
+    --color-primary: var(--color-emerald-500);
+    --color-secondary: var(--color-blue-900);
+}
+
+.dark{
+    --ui-bg: #090D13;
+}
