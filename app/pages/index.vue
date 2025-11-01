@@ -20,7 +20,7 @@ const links = ref([
     label: 'Créer une vente',
     icon: 'i-ep-plus',
     color: 'neutral',
-    to: '/create',
+    to: '/newsale',
   },
 ])
 </script>
