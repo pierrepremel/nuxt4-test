@@ -41,13 +41,14 @@ const results = computed(() => {
     <div class="space-y-4">
       <UInput
         v-model="query"
+        icon="i-lucide-search"
         size="xl"
         class="w-full"
         placeholder="Que recherchez vous ? Mobilier, montre, matériel..."
       />
     </div>
     <section>
-      <div v-if="results.length">
+      <div v-if="results.length" class="grid grid-cols-2 gap-4">
         <div
           v-for="item in results"
           :key="item.type + item.id"
