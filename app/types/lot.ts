@@ -5,7 +5,8 @@ export enum LotCategory {
   SCULPTURE = 'Sculpture',
   BIJOUX = 'Bijoux',
   CERAMIQUE = 'Céramique',
-  TEXTILE = 'Textile'
+  TEXTILE = 'Textile',
+  NULL = ''
 }
 
 export interface Lot {
@@ -15,7 +16,7 @@ export interface Lot {
   title: string
   description: string
   category: LotCategory 
-  lowEstimate: number
-  highEstimate: number
+  lowEstimate: number | null
+  highEstimate: number | null
   imageUrl: string
 }
