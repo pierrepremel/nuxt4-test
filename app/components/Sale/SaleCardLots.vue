@@ -7,7 +7,7 @@ const props = defineProps<{
 
 <template>
   <div>
-    <p class="font-semibold text-gray-400 mb-2">
+    <p class="font-semibold text-slate-600 mb-2">
       {{ lots.length }} lot{{ lots.length > 1 ? 's' : '' }}
     </p>
     <div class="grid grid-cols-4 gap-2">
