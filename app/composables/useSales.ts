@@ -7,6 +7,7 @@ export const useSales = () => {
     return useFetch<Sale[]>('/sales', { 
       $fetch: $api,
       key: 'sales',
+      lazy: true,
       transform: (sales) => {
       return sales.sort((a, b) => {
         const order = { live: 0, upcoming: 1 }
@@ -19,7 +20,8 @@ export const useSales = () => {
   const getSale = (id: string) => {
     return useFetch<Sale>(`/sales/${id}`, { 
       $fetch: $api,
-      key: `sale-${id}`
+      key: `sale-${id}`,
+      lazy: true,
     })
   }
   

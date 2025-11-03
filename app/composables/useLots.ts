@@ -6,27 +6,30 @@ export const useLots = () => {
   const getLots = () => {
     return useFetch<Lot[]>('/lots', { 
       $fetch: $api,
-      key: 'lots'
+      key: 'lots',
+      lazy: true
     })
   }
   
   const getLot = (id: string) => {
     return useFetch<Lot>(`/lots/${id}`, { 
       $fetch: $api,
-      key: `lot-${id}`
+      key: `lot-${id}`,
+      lazy: true
     })
   }
   
-  // const getLotsBySale = (saleId: string) => {
-  //   return useFetch<Lot[]>(`/sales/${saleId}/lots`, { 
-  //     $fetch: $api,
-  //     key: `lots-sale-${saleId}`
-  //   })
-  // }
+  const getLotsBySale = (saleId: string) => {
+    return useFetch<Lot[]>(`/lots?saleId=${saleId}`, { 
+      $fetch: $api,
+      key: `lots-sale-${saleId}`,
+      lazy: true
+    })
+  }
   
   return {
     getLots,
     getLot,
-    // getLotsBySale
+    getLotsBySale
   }
 }
