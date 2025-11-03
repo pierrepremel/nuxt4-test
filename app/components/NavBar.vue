@@ -25,7 +25,11 @@ const navItems = computed(() => [
   <UHeader>
     <template #left>
       <NuxtLink to="/">
-        <img src="~/assets/img/logo_adn.svg" class="w-auto h-10 shrink-0" />
+        <img
+          src="~/assets/img/logo_adn.svg"
+          class="w-auto h-10 shrink-0"
+          alt="adn enchères logo"
+        />
       </NuxtLink>
       <TemplateMenu />
     </template>

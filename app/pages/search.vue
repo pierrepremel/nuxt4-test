@@ -48,7 +48,7 @@ const results = computed(() => {
       />
     </div>
     <section>
-      <div v-if="results.length" class="grid grid-cols-2 gap-4">
+      <div v-if="results.length" class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div
           v-for="item in results"
           :key="item.type + item.id"

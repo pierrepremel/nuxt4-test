@@ -1,13 +1,18 @@
 <script setup lang="ts">
 import type { Lot } from '~/types/lot'
+
 const { getSales } = useSales()
 const { getLots } = useLots()
 
-const { data: sales, pendingSales, errorSales } = await getSales()
-const { data: lots, pendingLots, errorLots } = await getLots()
+const {
+  data: sales,
+  pending: pendingSales,
+  error: errorSales,
+} = await getSales()
+const { data: lots, pending: pendingLots, error: errorLots } = await getLots()
 
 const lotsBySaleId = computed(() => {
-  if (!lots.value) return new Map()
+  if (!lots.value) return new Map<string, Lot[]>()
 
   return lots.value.reduce(
     (map, lot) => map.set(lot.saleId, [...(map.get(lot.saleId) || []), lot]),
@@ -32,20 +37,25 @@ const links = ref([
       description="Ventes en cours et à venir"
       :links="links"
     />
+
     <UPageBody>
-      <div>
-        <div v-if="pendingSales">Chargement</div>
-        <div v-else-if="errorSales">Erreur : {{ errorSales.message }}</div>
-        <div v-else class="grid grid-cols-3 gap-6">
-          <SaleCard
-            v-for="sale in sales"
-            :key="sale.id"
-            :sale="sale"
-            :pendingLots="pendingLots"
-            :errorLots="errorLots"
-            :lots="lotsBySaleId.get(sale.id) || []"
-          />
-        </div>
+      <div v-if="pendingSales">Chargement…</div>
+      <div v-else-if="errorSales">Erreur : {{ errorSales.message }}</div>
+
+      <div
+        v-else
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6"
+      >
+        <template v-for="sale in sales" :key="sale.id">
+          <NuxtLink :to="`/${sale.id}`">
+            <SaleCard
+              :sale="sale"
+              :pendingLots="pendingLots"
+              :errorLots="errorLots"
+              :lots="lotsBySaleId.get(sale.id) || []"
+            />
+          </NuxtLink>
+        </template>
       </div>
     </UPageBody>
   </div>

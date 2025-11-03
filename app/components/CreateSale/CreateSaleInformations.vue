@@ -19,7 +19,10 @@ const dateFormat = new DateFormatter('fr-FR', { dateStyle: 'medium' })
     <div class="flex flex-col md:flex-row my-4 gap-6">
       <div>
         <UFormField label="Image d'illustration">
-          <UFileUpload v-model="saleImg" class="w-80 min-h-51" />
+          <UFileUpload
+            v-model="saleImg"
+            class="w-full md:w-80 min-h-40 md:min-h-51"
+          />
         </UFormField>
       </div>
 
@@ -28,7 +31,7 @@ const dateFormat = new DateFormatter('fr-FR', { dateStyle: 'medium' })
         <UFormField label="Titre" required>
           <UInput
             v-model="saleTitle"
-            placeholder="Mobilier et Objets d'Art..."
+            placeholder="Ex : Mobilier et Objets d'Art..."
             class="w-full"
           />
         </UFormField>
